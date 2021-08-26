@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
 from flask_heroku import Heroku
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://csqkejzxapdayn:987be0c9d4ccb5db2b250d0651334b6f0225f6ef741bdefa1e24dd80012ee578@ec2-34-194-14-176.compute-1.amazonaws.com:5432/d7imc1vhfg9qbq'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://csqkejzxapdayn:987be0c9d4ccb5db2b250d0651334b6f0225f6ef741bdefa1e24dd80012ee578@ec2-34-194-14-176.compute-1.amazonaws.com:5432/d7imc1vhfg9qbq'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 heroku = Heroku(app)
 db = SQLAlchemy(app)
