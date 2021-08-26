@@ -1,9 +1,11 @@
 from flask import Flask, request, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask_marshmallow import Marshmallow
+from flask_heroku import Heroku
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:postgres@localhost:5432/restblog'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+heroku = Heroku(app)
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
 
