@@ -10,7 +10,6 @@ flask-marshmallow = "*"
 marshmallow-sqlalchemy = "*"
 psycopg2-binary = "*"
 gunicorn = "*"
-flask-heroku = "*"
 
 [dev-packages]
 autopep8 = "*"
